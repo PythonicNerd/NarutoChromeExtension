@@ -6,14 +6,17 @@ var narutoList = ["https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQf10GL2
 
 
 for(var i = 0; i <= imgLen; i++){
-
+  var foreverTrue = true;
+while(foreverTrue === true){
   var curImg = images[i];
 
  
   var narutoImg = narutoList[Math.floor((Math.random() * narutoList.length) + 1)];
   
   curImg.src = narutoImg;
-  
+  (if curImg.src !== undefined){
+    break;
+  }
 
 
 }
