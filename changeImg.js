@@ -14,9 +14,9 @@ while(foreverTrue === true){
   var narutoImg = narutoList[Math.floor((Math.random() * narutoList.length) + 1)];
   
   curImg.src = narutoImg;
-  (if curImg.src !== undefined){
+  if (curImg.src !== undefined){
     break;
   }
 
-
+}
 }
